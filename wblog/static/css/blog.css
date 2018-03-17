@@ -1,0 +1,121 @@
+html, body{
+	margin: 0;
+	padding: 0;
+	width: 100% 
+}
+body{
+	font-family: Quicksand;
+}
+.headerWorkout {
+	width: 100%;
+	height: 100vh;
+	background: url('../images/wbg.jpg') no-repeat 50% 50%;
+	background-size: cover;
+}
+.headerViolin {
+	width: 100%;
+	height: 100vh;
+	background: url('../images/vbg.jpg') no-repeat 50% 50%;
+	background-size: cover;
+}
+.content {
+	width: 90%; 
+	margin: 4em auto;
+	font-size: 20px;
+	text-align: justify;
+	line-height: 30px;
+}
+.content h2{
+	color: #31afb2;
+}
+.content p{
+	padding: 0 20px;
+}
+.logo{
+	position: fixed; 
+	float: left;
+	color: #fff;
+	margin: 16px 36px;
+	font-weight: bold;
+	font-size: 24px;
+}
+nav{
+	position: fixed;
+	width: 100%;
+	box-sizing: border-box;
+	transition: .3s;
+}
+nav.black {
+	background: rgba(0, 0, 0, 1);
+}
+nav ul{
+	list-style: none;
+	
+	text-overflow: hidden;
+	color: #fff;
+	margin: 0;
+	padding: 0;
+	text-align: center;
+	transition: 1s;
+}
+nav.black ul {
+	background: #000;
+}
+nav ul li{
+	display: inline-block;
+	padding: 20px;
+}
+nav ul li a{
+	text-decoration: none;
+	color: #fff;
+	font-size: 20px;
+}
+nav ul li a:hover{
+	text-decoration: none;
+	color: #fff;
+	font-size: 20px;
+}
+.menu-icon{
+	width: 100%
+	background: #000;
+	text-align: right;
+	box-sizing: border-box;
+	padding: 15px 24px;
+	cursor: pointer;
+	color: #fff;
+	display: none;
+}
+
+@media (max-width: 870px) {
+	.logo {
+		position: fixed;
+		top: 0;
+		margin-top: 16px;
+	}
+	nav ul {
+		max-height: 0px; 
+		background: #000;
+		display: none;
+	}
+	nav.black ul{
+		min-height: 40em;
+		background: #000;
+	}
+	.showing {
+		display: block;
+	}
+	nav ul li{
+		box-sizing: border-box;
+		width: 100%;
+		padding: 24px 0;
+		text-align: center;
+	}
+	.menu-icon {
+		display: block;
+	}
+}
+
+
+
+
+
