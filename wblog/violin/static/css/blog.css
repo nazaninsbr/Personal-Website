@@ -6,10 +6,16 @@ html, body{
 body{
 	font-family: Quicksand;
 }
-header {
+.headerWorkout {
 	width: 100%;
 	height: 100vh;
 	background: url('../images/wbg.jpg') no-repeat 50% 50%;
+	background-size: cover;
+}
+.headerViolin {
+	width: 100%;
+	height: 100vh;
+	background: url('../images/vbg.jpg') no-repeat 50% 50%;
 	background-size: cover;
 }
 .content {
