@@ -43,6 +43,7 @@ INSTALLED_APPS = [
 	'django_markdown',
 	'workout',
 	'violin',
+	'blog',
 ]
 
 MIDDLEWARE = [
