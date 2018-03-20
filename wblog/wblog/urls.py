@@ -16,9 +16,14 @@ Including another URLconf
 from django.conf.urls import *
 from django.contrib import admin
 
+from django.conf import settings 
+from django.conf.urls.static import static
+
+
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'^markdown/', include("django_markdown.urls")),
     url(r'^workout/', include('workout.urls')),
     url(r'^violin/', include('violin.urls')),
-]
+    url(r'^blog/', include('blog.urls')),
+] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
