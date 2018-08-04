@@ -3,6 +3,7 @@ from django.db import models
 # Create your models here.
 class Post(models.Model):
     title = models.CharField(max_length=120)
+    image = models.FileField(null=True, blank=True)
     content = models.TextField()
     timestamp = models.DateTimeField(auto_now=False)
     lastupdated = models.DateTimeField(auto_now=True)

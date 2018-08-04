@@ -6,6 +6,9 @@ from .forms import PostForm
 
 def posts_home(request):
     allPosts = Post.objects.all()
+    query = request.GET.get("q")
+    if query:
+        allPosts = allPosts.filter(title__icontains=query)
     context = {"posts": allPosts}
     return render(request, "blog.html", context)
 
